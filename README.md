@@ -25,7 +25,11 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ] Explain benefit(s) using `client-side routing`?
+- [x] Explain benefit(s) using `client-side routing`?
+
+Client-side routing is useful in single page applications in that it enables us to navigate to unique
+sections of the app without having to reload the entire page. These unique, identifiable portions can then
+be bookmarked/shared etc. It also improves the user experience by providing users with a way to load components faster without having to go to the server.
 
 > Answer:
 
