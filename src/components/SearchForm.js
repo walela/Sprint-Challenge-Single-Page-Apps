@@ -6,6 +6,7 @@ const StyledInput = styled.input`
   font-size: 2rem;
   padding: 10px;
   border-radius: 10px;
+  margin-left: 25px;
 `;
 
 // searchbar
