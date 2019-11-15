@@ -1,29 +1,24 @@
 import React from "react";
+import styled from "styled-components";
 
-const inputstyles = {
-  padding: "10px",
-  fontFamily: "Fira Mono, monospace"
-};
+const StyledInput = styled.input`
+  width: 12em;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+`;
 
-const buttonstyles = {
-  fontSize: "1.5em",
-  fontFamily: "monospace"
-};
-export default function SearchForm({ keyword, onSearch, handleInputChange }) {
+// searchbar
+function SearchForm(props) {
   return (
-    <section className="search-form">
-      <form onSubmit={e => onSearch(e, keyword)}>
-        <input
-          onChange={handleInputChange}
-          placeholder="Search by name..."
-          style={inputstyles}
-          value={keyword}
-          name="name"
-        />
-        <button style={buttonstyles} type="submit">
-          Search
-        </button>
-      </form>
-    </section>
+    <StyledInput
+      type="text"
+      id="search"
+      value={props.value}
+      placeholder="Search by name..."
+      onChange={props.onChange}
+    />
   );
 }
+
+export default SearchForm;
