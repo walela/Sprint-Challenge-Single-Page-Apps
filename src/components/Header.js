@@ -12,7 +12,7 @@ export default function Header() {
       <Menu>
         <div className="menu-container">
           <NavLink exact to="/" activeClassName="selected">
-            Home Page
+            Home
           </NavLink>
           <NavLink to="/characters" activeClassName="selected">
             Characters
