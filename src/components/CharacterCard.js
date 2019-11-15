@@ -1,5 +1,4 @@
 import React from "react";
-
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
@@ -13,9 +12,7 @@ export default function CharacterCard(props) {
         <Card.Text>Status: {props.status}</Card.Text>
         <Card.Text>Gender: {props.gender}</Card.Text>
         <Card.Text>Location: {props.location.name}</Card.Text>
-        <Button variant="primary">
-          <a href={props.url}>Learn more</a>
-        </Button>
+        <Button variant="primary">Learn more</Button>
       </Card.Body>
     </Card>
   );
